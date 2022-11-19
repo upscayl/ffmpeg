@@ -1,4 +1,4 @@
-# `ffmpeg-static-electron`
+# `upscayl-ffmpeg`
 
 The module returns a file path to the binary for the target operating system. 
 
@@ -23,7 +23,7 @@ ffmpeg static binaries for Mac OSX and Linux and Windows
 This module is installed via npm:
 
 ``` bash
-$ npm install ffmpeg-static-electron
+$ yarn add upscayl-ffmpeg
 ```
 
 ## Example Usage
@@ -31,7 +31,7 @@ $ npm install ffmpeg-static-electron
 Returns the path of a statically linked ffmpeg binary on the local filesystem.
 
 ``` js
-var ffmpeg = require('ffmpeg-static-electron');
+var ffmpeg = require('upscayl-ffmpeg');
 console.log(ffmpeg.path);
 // /Users/eugeneware/Dropbox/work/ffmpeg-static/bin/darwin/x64/ffmpeg
 ```
