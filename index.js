@@ -20,7 +20,7 @@ if (platform === 'mac' && (arch !== 'x64' &&  arch !== 'arm64' )) {
   console.error('Unsupported architecture.')
   process.exit(1)
 }
-if (arch !== 'ia32' ) {
+if (arch === 'ia32' ) {
   console.error('Unsupported architecture.')
   process.exit(1)
 } else if(arch === 'arm64'){
