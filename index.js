@@ -16,14 +16,16 @@ if (platform !== 'linux' && platform !== 'mac' && platform !== 'win' && platform
 }
 
 var arch = os.arch()
-if (platform === 'mac' && (arch !== 'x64' &&  arch !== 'arm64' )) {
-  console.error('Unsupported architecture.')
-  process.exit(1)
-}
+// if (platform === 'mac' && (arch !== 'x64' &&  arch !== 'arm64' )) {
+//  console.error('Unsupported architecture.')
+//  process.exit(1)
+// }
+
 if (arch === 'ia32' ) {
   console.error('Unsupported architecture.')
   process.exit(1)
-} else if(arch === 'arm64'){
+}
+if(arch === 'arm64'){
   arch = 'x64'
 }
 
